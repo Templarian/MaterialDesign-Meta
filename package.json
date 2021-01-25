@@ -1,10 +1,11 @@
 {
   "name": "@mdi/meta",
-  "version": "2.5.94",
+  "version": "5.9.55",
   "description": "Material Design Icons meta.json dist",
   "main": "index.js",
   "scripts": {
-    "build": "node build.js",
+    "build:flat": "node ./srcipts/build.js",
+    "build:normalized": "node ./scripts/build-metadata.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/Templarian/MaterialDesign-Meta#readme",
   "devDependencies": {
-    "@mdi/svg": "^2.5.94",
-    "@mdi/util": "^0.1.1"
+    "@mdi/svg": "5.9.55",
+    "@mdi/util": "^0.3.2"
   }
 }
