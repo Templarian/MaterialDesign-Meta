@@ -124,7 +124,7 @@ const files = [
 
 const generateFile = (data, minify = false) => {
   const contents = JSON.stringify(data.data, null, minify ? null : 2)
-  const filename = `./src/json/${data.filename}${minify ? '.min' : ''}.json`
+  const filename = `./json/${data.filename}${minify ? '.min' : ''}.json`
   console.log('Generating filename', filename)
   util.write(filename, contents)
 }
